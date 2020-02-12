@@ -37,8 +37,8 @@ let promise = new Promise((resolve,reject) => {
     )
   ```
   这两个函数都接受`Promise对象`传递出的值作为参数。
-- `Promise`新建后就会立即执行
-- `Promise对象`实现AJAX封装
+- [`Promise`新建后就会立即执行](https://github.com/lhalou/Promise/blob/master/Promise%E6%96%B0%E5%BB%BA%E5%90%8E%E5%B0%B1%E4%BC%9A%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C.js)
+- [`Promise对象`实现AJAX封装]()
 - 如果调用的`resolve`函数和`reject`函数时带有参数，那么这些参数就会被传递给回调函数。`reject`函数的参数通常是`Error`对象的实例，表示抛出的错误，`resolve`函数的参数除了正常的值外，还可以是另一个`promise`实例，当参数是另一个`promise`实例的时候，其状态就由另一个参数的实例决定.
   ```
   promise1("/posts.json").then(
